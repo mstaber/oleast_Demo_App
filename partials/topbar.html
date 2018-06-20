@@ -1,0 +1,34 @@
+<!--#TODO Dieser Abschnitt ist für die oberste Topbar, einzusetzen in jedem Screen-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <!--#TODO Hier wenn möglich das Logo des LSG als Vektordatei einfügen, also svg-->
+        <img src="images/LSGgroup_Logo_white_web_RGB.png" height="20" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle profile" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!--#TODO Nach Userlogin soll hier die persönliche Begrüßung der Person kommen-->
+                    Welcome Lucy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <!--#TODO Falls das Profil ein Bild hat, soll dies hier eingefügt werden. Über Imagemagick kann direkt in Größe 30px 30px gerendert werden. Diese Bild dann mit border-radius: 50% rund machen-->
+        <img class="profile" src="images/dummy.jpeg" height="30">
+        <i class="material-icons">
+            <!--#TODO Aktuelles Platzhaltericon, bis von LSG ein eigenen Iconset existiert.-->
+            exit_to_app
+        </i>
+    </div>
+</nav>
