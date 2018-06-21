@@ -4,7 +4,15 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 /*custom*/
-.material-icons {font-size:17px !important;}
+.nav-link {
+    display: block;
+    padding: 1rem 5rem;
+}
+.navbar.brand_bar {padding: 3px 10px;}
+button#sidebarCollapse {background-color: #7386D5;color:#ffffff;margin-left: -15px;border-radius: 0px 5px 5px 0px;}
+.navbar.navigation {padding:0px;}
+img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
+.material-icons {font-size:17px !important;margin-right:5px;}
 .nav-pills .nav-link {
     border-radius: 0px;
 }
@@ -22,6 +30,10 @@ span.middle {padding:10px;}
     padding: 0px;
 }
 button i, button span {vertical-align: middle;}
+.card-title {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
 .card {
     border:none;
     box-shadow: 3px 3px 10px #c1c1c1;
@@ -35,10 +47,10 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+    line-height: 1.1rem;
+    color: #000;
 }
 
 a, a:hover, a:focus {
@@ -135,7 +147,7 @@ img.profile {
 #sidebar {
     width: 225px;
     position: fixed;
-    top: 110px;
+    top: 62px;
     left: 0;
     height: 100vh;
     z-index: 999;
