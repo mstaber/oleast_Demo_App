@@ -9,7 +9,7 @@
     padding: 1rem 5rem;
 }
 .navbar.brand_bar {padding: 3px 10px;}
-button#sidebarCollapse {background-color: #7386D5;color:#ffffff;margin-left: -15px;border-radius: 0px 5px 5px 0px;}
+button#sidebarCollapse {background-color: #55555a;color:#ffffff;margin-left: -15px;border-radius: 0px 5px 5px 0px;}
 .navbar.navigation {padding:0px;}
 img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
 .material-icons {font-size:17px !important;margin-right:5px;}
@@ -29,6 +29,20 @@ span.middle {padding:10px;}
     flex: 1 1 auto;
     padding: 0px;
 }
+#sidebar ul {padding:0 10px;}
+.top_breadcrumb {margin-bottom:15px;}
+.breadcrumb {background:none;}
+.breadcrumb-item + .breadcrumb-item::before {content:">";}
+.modal-title {width:100%;}
+.modal-footer {border:none;}
+.modal_button {border:none;}
+.btn-outline-primary.modal_button {color: #99dfef;}
+.btn-outline-primary.modal_button:hover {color: #ffffff;background-color:#99dfef;}
+.modal-footer {justify-content:center;}
+.modal-body {text-align: center;}
+.modal-body .form-group {text-align: left;}
+.modal-body label {color: #99dfef;}
+.modal-body .form-control {border: none;border-bottom: 1px solid #000;}
 button i, button span {vertical-align: middle;}
 .card-title {
     margin-bottom: 0.75rem;
@@ -40,6 +54,11 @@ button i, button span {vertical-align: middle;}
     margin-bottom: 30px;
 }
 .center {text-align: center;}
+p.card-title {text-align:center;min-height:50px;}
+.card-body {text-align: center;}
+.card-body small {color: #9c9d9d;}
+img.card_footer_icons {width:15px;}
+.card-footer {background:none; border:none;}
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -151,7 +170,7 @@ img.profile {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #55555a;
     color: #fff;
     transition: all 0.3s;
 }
@@ -167,7 +186,7 @@ img.profile {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #55555a;
 }
 
 #sidebar ul p {
@@ -187,7 +206,7 @@ img.profile {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
      color: #fff;
-     background: #6d7fcc;
+     background: #55555a;
  }
 
 a.profile[aria-expanded="true"] {

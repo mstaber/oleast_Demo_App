@@ -21,16 +21,9 @@
     <!-- Topbar Holder -->
     <div id="navibar"></div>
 
-    <!-- Sidebar Holder -->
-    <div id="sidebar"></div>
-
     <!-- Page Content Holder -->
-    <div class="container-fluid" id="content">
+    <div class="container-fluid">
         <div class="top_breadcrumb">
-            <button type="button" id="sidebarCollapse" class="btn btn-sm">
-                <i class="material-icons">remove_red_eye</i>
-                <span>Filter</span>
-            </button>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -138,10 +131,30 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title">Card title</p>
+                    <small>TEst</small>
+                </div>
+                <div class="card-footer">
+                    <div class="row justify-content-md-center">
+                        <div class="col center">
+                            <img class="card_footer_icons" src="images/download.png">
+                        </div>
+                        <div class="col center">
+                            <img class="card_footer_icons" src="images/trash.png">
+                        </div>
+                        <div class="col center">
+                            <img class="card_footer_icons" src="images/edit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
+<div id="modal"></div>
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <!-- Bootstrap Js CDN -->
@@ -151,7 +164,7 @@
 <script src="js/custom.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#sidebar').load('partials/sidebar.html');
+        $('#modal').load('partials/modal.html');
         $('#topbar').load('partials/topbar.html');
         $('#navibar').load('partials/navigation.html');
 
