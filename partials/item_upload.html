@@ -1,0 +1,522 @@
+<!-- #TODO: Elements for the form should come from the database and be populated dynamically. -->
+<!-- #TODO: Form has to be activated and customized for multipage form. That's not in Bootstrap, more js / angular.js-->
+<!-- #TODO: Left column/table is navigation for form. Each section create 1 to 14 has a link in navigation. Please create multipage form with angular and different sections -->
+<div class="row">
+    <div class="col-lg-3">
+        <table class="table menu">
+            <tbody>
+            <tr>
+                <th rowspan="6" class="table_header active"><p>Basics | What</p></th>
+                <th class="active">What? <img class="check_icon" src="images/check.svg"></th>
+            </tr>
+            <tr><th>Name it!</th></tr>
+            <tr><th>Describe it!</th></tr>
+            <tr><th>Your number, pls.</th></tr>
+            <tr><th>Sort it!</th></tr>
+            <tr><th class="last_th">One more time!</th></tr>
+            <tr>
+                <th rowspan="3" class="table_header"><p>Who | Where</p></th>
+                <th>Whom's is it?</th>
+            </tr>
+            <tr><th>Where?</th></tr>
+            <tr><th class="last_th">Which Industry?</th></tr>
+            <tr>
+                <th rowspan="5" class="table_header"><p>Details</p></th>
+                <th>Good or great?</th>
+            </tr>
+            <tr><th>Style?</th></tr>
+            <tr><th>BOM!</th></tr>
+            <tr><th>What 2?</th></tr>
+            <tr><th class="last_th">Attachments</th></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-8 create_form">
+        <div id="create_1" class="clearfix">
+            <h6>Type:</h6>
+            <p>What are you showing us - product or service?</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-3">
+                        <!-- #TODO: Active class has to change by selection with js -->
+                        <div class="form-check form-check-inline active">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioQuality1" value="option1">
+                            <label class="form-check-label" for="inlineRadioQuality1">
+                                <h6>Basic</h6>
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/product.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioQuality2" value="option2">
+                            <label class="form-check-label" for="inlineRadioQuality2">
+                                <h6>Quality</h6>
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/service.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form first"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_2" class="clearfix">
+            <h6>Name:</h6>
+            <p>What is you product / service called?</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="InputName" aria-describedby="NameHelp" placeholder="Please choose a short yet descriptive name.">
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_3" class="clearfix">
+            <h6>Description:</h6>
+            <p>Tell us your story - what is it all about?</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="InputDescription" aria-describedby="DescriptionHelp" placeholder="Please write your description.">
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_4" class="clearfix">
+            <h6>Unique Identifier:</h6>
+            <p>Please insert the corresponding system number (e.g. SAP, cBase), if applicable.</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="InputUI" aria-describedby="UIHelp" placeholder="Type in the corresponding number.">
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_5" class="clearfix">
+            <h6>Category:</h6>
+            <p>Which category does your product/service belong to?</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Tray Menu</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Last Mile Logistics</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">Supply Chain solutions</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+                            <label class="form-check-label" for="inlineRadio4">Crew services</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2">
+                            <label class="form-check-label" for="inlineRadio5">Lounge solutions</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3">
+                            <label class="form-check-label" for="inlineRadio6">Other services</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option1">
+                            <label class="form-check-label" for="inlineRadio7">Off-the-shelf items</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option2">
+                            <label class="form-check-label" for="inlineRadio8">Packaged goods</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option3">
+                            <label class="form-check-label" for="inlineRadio9">Packaged menu</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option1">
+                            <label class="form-check-label" for="inlineRadio10">Onboard retail management</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option2">
+                            <label class="form-check-label" for="inlineRadio11">Pre-order solutions</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option3">
+                            <label class="form-check-label" for="inlineRadio12">IT & Media services</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_6" class="clearfix">
+            <h6>Sub-Category:</h6>
+            <p>In which sub-category does it fit in?</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio01" value="option1">
+                            <label class="form-check-label" for="inlineRadio01">Dishes</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio02" value="option2">
+                            <label class="form-check-label" for="inlineRadio02">Recipes</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio03" value="option3">
+                            <label class="form-check-label" for="inlineRadio03">Tray</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_7" class="clearfix">
+            <h6>Brand</h6>
+            <p>Which brand offers this product/service?</p>
+            <form> <!-- #TODO: Icons have to be included as svg. -->
+                <div class="form-row">
+                    <div class="col-3">
+                        <div class="form-check form-check-inline active">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand1" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxBrand1">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand2" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxBrand2">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand3" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxBrand3">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand4" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxBrand4">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand5" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxBrand5">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckboxBrand6" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxBrand6">
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_8" class="clearfix">
+            <h6>Division:</h6>
+            <p>Please select all the regions where this product/service can be offered.</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision1" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxDivision1">Europe</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision2" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxDivision2">Latin America</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision3" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxDivision3">North America</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision4" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxDivision4">Asia Pacific</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision5" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxDivision5">Emerging Markets</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxDivision6" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxDivision6">Global</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_9" class="clearfix">
+            <h6>Industry:</h6>
+            <p>Please select one or more industries we could offer this product/service to.</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-3">
+                        <!-- #TODO: Active class has to change by selection with js -->
+                        <div class="form-check form-check-inline active">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxIndustry1" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxIndustry1">
+                                <h6>Airline</h6>
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/plane.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxIndustry2" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxIndustry2">
+                                <h6>Train</h6>
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/train.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxIndustry3" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxIndustry3">
+                                <h6>Convenience retail</h6>
+                                <div class="box">
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/retail.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_10" class="clearfix">
+            <h6>Quality Level:</h6>
+            <p>How would you assess the quality level of your product/service (compared to others in the same category)?</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-3">
+                        <!-- #TODO: Active class has to change by selection with js -->
+                        <div class="form-check form-check-inline active">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioQuality1" value="option1">
+                            <label class="form-check-label" for="inlineRadioQuality1">
+                                <h6>Basic</h6>
+                                <div class="box">
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioQuality2" value="option2">
+                            <label class="form-check-label" for="inlineRadioQuality2">
+                                <h6>Quality</h6>
+                                <div class="box">
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioQuality3" value="option3">
+                            <label class="form-check-label" for="inlineRadioQuality3">
+                                <h6>Premium</h6>
+                                <div class="box">
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                    <svg class="checked" viewBox="0 0 32 32">
+                                        <use xlink:href="images/star.svg#Ebene_1"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_11" class="clearfix">
+            <h6>Culinary Type:</h6>
+            <p>Which culinary does your product reflect?</p>
+            <form>
+                <div class="form-row">
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxCulinary1" value="option1">
+                            <label class="form-check-label" for="inlineCheckboxCulinary1">Italian</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxCulinary2" value="option2">
+                            <label class="form-check-label" for="inlineCheckboxCulinary2">Spanish</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckboxCulinary3" value="option3">
+                            <label class="form-check-label" for="inlineCheckboxCulinary3">German</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+        <div id="create_14" class="clearfix">
+            <h6>Attachments:</h6>
+            <p>Please upload at least one picture that displays or illustrates your product/service.<br>
+                You may also upload a video or PDF file for further explanation.</p>
+            <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input type="file" name="files[]" id="js-upload-files" multiple>
+                    </div>
+                    <button type="submit" class="btn btn-outline-form btn_lsg" id="js-upload-submit">Upload files</button>
+                </div>
+            </form>
+            <div class="upload-drop-zone" id="drop-zone">
+                <svg viewBox="0 0 32 32">
+                    <use xlink:href="images/upload.svg#Ebene_1"></use>
+                </svg>
+                <br>Just drag and drop files here
+            </div>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Previous</span></button>
+            <button type="button" class="btn btn-outline-form btn_lsg form"><span>Next</span></button>
+        </div>
+
+    </div>
+</div>

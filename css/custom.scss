@@ -29,6 +29,21 @@
     background-color: #fff;
     border-color: #82be00;
 }
+.btn-outline-form {
+    color:#a5007d;
+    background-color: #fff;
+    border-color: #a5007d;
+}
+.btn_lsg {
+    border-radius: 25px;
+    margin:5px 0px;
+    float: right;
+}
+.form {
+    margin-right:20px;
+    float:left;
+    width:100px;
+}
 .wide {width:100%;}
 .sidebar_left {
     p {
@@ -64,6 +79,261 @@ p.ModalDetails {
     padding-top:15px;
     span {border-bottom: 1px solid #6f6f6e;}
 }
+.table_header {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    vertical-align: middle !important;
+    text-transform: uppercase;
+    text-align: center;
+    p {
+        border-bottom:1px solid #c5c6c6;
+        padding-bottom: 5px;
+    }
+}
+.last_th {
+    padding-bottom: 50px !important;
+}
+.table_header.active p, th.active{
+        color:#a5007d;
+    }
+.check_icon {
+    width:20px;
+    margin: 0px 8px;
+}
+.table.menu {
+    border-right: 1px solid #c5c6c6;
+}
+.create_form {
+    h6 {
+        color:#a5007d;
+        text-transform: uppercase;
+    }
+    input {
+        border:none;
+        border-radius:none !important;
+        background-color: transparent;
+        border-bottom:1px solid #c5c6c6;
+    }
+    .first {
+        color:#c5c6c6;
+        background-color: #fff;
+        border-color: #c5c6c6;
+    }
+    .form-check {
+        width:300px;
+        padding:10px;
+        border:1px solid #c5c6c6
+    }
+    .form-row {
+        margin-bottom: 15px;
+    }
+}
+.clearfix {
+    clear: both;
+}
+#create_1 {
+    input[type=radio]
+    {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        padding: 10px;
+        position: absolute;
+        top:-7px;
+        right:40px;
+    }
+    .form-check-label {
+        width: 100%;
+        h6 {
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+    .form-check-inline {
+        padding:20px 0px 0px 0px;
+        width:200px;
+    }
+    .box {
+        background:#c5c6c6;
+        padding:40px;
+    }
+    svg {
+        fill: none;
+        stroke:#fff;
+        stroke-width:4;
+        stroke-miterlimit:10;
+        stroke-linejoin:round;
+    }
+    .active {
+        border-color: #a5007d;
+        .box {
+            background-color: #a5007d;
+        }
+        svg {
+            fill:#b73397;
+        }
+        svg.checked {
+            fill: #ffffff;
+        }
+    }
+}
+#create_7 {
+    input[type=radio]
+    {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        padding: 10px;
+        position: absolute;
+        top:-7px;
+        right:40px;
+    }
+    .form-check-label {
+        width: 100%;
+    }
+    .form-check-inline {
+        padding:20px 0px 0px 0px;
+        width:200px;
+        margin-bottom: 20px;
+    }
+    .box {
+        padding:10px;
+    }
+    svg{
+        fill:#ffffff;
+    }
+    .active {
+        border-color: #a5007d;
+        svg {
+            fill:#a5007d;
+        }
+    }
+}
+#create_9 {
+    input[type=checkbox]
+    {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        padding: 10px;
+        position: absolute;
+        top:-7px;
+        right:40px;
+    }
+    .form-check-label {
+        width: 100%;
+        h6 {
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+    .form-check-inline {
+        padding:20px 0px 0px 0px;
+        width:200px;
+    }
+    .box {
+        background:#c5c6c6;
+        padding:40px;
+    }
+    svg{
+        fill:#ffffff;
+    }
+    .active {
+        border-color: #a5007d;
+        .box {
+            background-color: #a5007d;
+        }
+    }
+}
+#create_10 {
+    input[type=radio]
+    {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        padding: 10px;
+        position: absolute;
+        top:-7px;
+        right:40px;
+    }
+    .form-check-label {
+        width: 100%;
+        h6 {
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+    .form-check-inline {
+        padding:20px 0px 0px 0px;
+        width:200px;
+    }
+    .box {
+        background:#c5c6c6;
+        padding:40px;
+    }
+    svg {
+        fill: #d1d1d1;
+        width: 35px;
+    }
+    svg.checked {
+        fill:#ffffff;
+    }
+    .active {
+        border-color: #a5007d;
+        .box {
+            background-color: #a5007d;
+        }
+        svg {
+            fill:#b73397;
+        }
+        svg.checked {
+            fill: #ffffff;
+        }
+    }
+}
+#create_14 {
+    /* layout.css Style */
+    .upload-drop-zone {
+        height: 250px;
+        border-width: 2px;
+        margin-bottom: 20px;
+        margin-top:40px;
+    }
+
+    /* skin.css Style*/
+    .upload-drop-zone {
+        color: #ccc;
+        border-style: dashed;
+        border-color: #ccc;
+        text-align: center
+    }
+    .upload-drop-zone.drop {
+        color: #222;
+        border-color: #222;
+    }
+    svg {
+        width:200px;
+        fill:#d9dada;
+    }
+    input[type=file] {
+        border: none;
+    }
+}
+.table th, .table td {border:none;padding:0.5rem;font-weight: normal;}
 button#sidebarCollapse {background-color: #55555a;color:#ffffff;margin-left: -15px;border-radius: 0px 5px 5px 0px;}
 .navbar.navigation {padding:0px;}
 img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
@@ -80,7 +350,6 @@ img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
 }
 .middle {vertical-align: super;}
 span.middle {padding:10px;}
-.btn_lsg {border-radius: 25px;margin:5px 0px;float: right;}
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;

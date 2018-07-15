@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>LSG Demo App</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Topbar Holder -->
+    <div id="navibar"></div>
+
+    <!-- Page Content Holder -->
+    <div class="container-fluid">
+        <div class="top_breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+            <hr>
+        </div>
+        <div id="item_upload"></div>
+    </div>
+</div>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#item_upload').load('partials/item_upload.html');
+        $('#topbar').load('partials/topbar.html');
+        $('#navibar').load('partials/navigation.html');
+    });
+</script>
+</body>
+</html>
