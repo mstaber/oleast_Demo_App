@@ -23,17 +23,7 @@
 
     <!-- Page Content Holder -->
     <div class="container-fluid">
-        <div class="top_breadcrumb">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-            </nav>
-            <hr>
-            <!-- TODO: Here have to be the selected items from the filter. By clicking on one item here should reduce the option in the left filter bar. -->
-        </div>
+        <div id="breadcrumb"></div>
         <!-- TODO: Next follows the carddeck for the portfolio items. The images and titles are only placeholders. -->
         <div class="card-deck">
             <div class="card">
@@ -167,6 +157,7 @@
         $('#modal').load('partials/modal.html');
         $('#topbar').load('partials/topbar.html');
         $('#navibar').load('partials/navigation.html');
+        $('#breadcrumb').load('partials/breadcrumb.html');
 
     });
 </script>

@@ -23,16 +23,8 @@
 
     <!-- Page Content Holder -->
     <div class="container-fluid">
-        <div class="top_breadcrumb">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-            </nav>
-            <hr>
-        </div>
+        <div id="breadcrumb"></div>
+
         <div id="item"></div>
     </div>
 </div>
@@ -48,6 +40,7 @@
         $('#item').load('partials/item.html');
         $('#topbar').load('partials/topbar.html');
         $('#navibar').load('partials/navigation.html');
+        $('#breadcrumb').load('partials/breadcrumb.html');
 
     });
 </script>

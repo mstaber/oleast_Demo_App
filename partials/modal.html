@@ -1,34 +1,67 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
+<!-- Button trigger modal for projects-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+    Modal for projects
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+        <div class="modal-content project">
             <div class="modal-body">
+                <!-- Following for delete object-->
+                <h4>Please confirm</h4>
                 <p>Do you really want to delete this project? This action can not be undone.</p>
+                <!-- Following for create Project-->
+                <h4>Create a new project</h4>
                 <form>
                     <div class="form-group">
                         <label for="exampleInputName">Name</label>
                         <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameHelp" placeholder="What's your new projects name?">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputDescription">Password</label>
+                        <label for="exampleInputDescription">Description</label>
                         <input type="text" class="form-control" id="exampleInputDescription" placeholder="Want some additional comments?">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary modal_button" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-outline-primary modal_button">Save changes</button>
+                <button type="button" class="btn btn-outline-secondary modal_button" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-primary modal_button">create project / Delete / Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal for items-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+    Modal for items
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content item">
+            <div class="modal-body">
+                <!-- Following for Add to project-->
+                <h4>Add to which project?</h4>
+                <form>
+                    <div class="form-group">
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>My first project</option>
+                            <option>My second project</option>
+                            <option>My third project</option>
+                            <option>My fourth project</option>
+                            <option>My fifth project</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-sub-footer">
+                <button type="button" class="btn btn-outline-primary modal_button">Save to project</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary modal_button" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-primary modal_button">create new project</button>
             </div>
         </div>
     </div>

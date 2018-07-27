@@ -26,28 +26,24 @@
 
     <!-- Page Content Holder -->
     <div class="container-fluid" id="content">
+        <div id="breadcrumb"></div>
+
         <div class="top_breadcrumb">
             <button type="button" id="sidebarCollapse" class="btn btn-sm">
                 <i class="material-icons">remove_red_eye</i>
                 <span>Filter</span>
             </button>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-            </nav>
-            <hr>
             <!-- TODO: Here have to be the selected items from the filter. By clicking on one item here should reduce the option in the left filter bar. -->
         </div>
         <!-- TODO: Next follows the carddeck for the portfolio items. The images and titles are only placeholders. -->
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-title">Card title</p>
-                </div>
+                <a href="item_detail.html">
+                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                    </div>
+                </a>
                 <div class="card-footer">
                     <div class="row justify-content-md-center">
                         <div class="col center">
@@ -63,10 +59,12 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-title">Card title</p>
-                </div>
+                <a href="item_detail.html">
+                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                    </div>
+                </a>
                 <div class="card-footer">
                     <div class="row justify-content-md-center">
                         <div class="col center">
@@ -82,10 +80,12 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-title">Card title</p>
-                </div>
+                <a href="item_detail.html">
+                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                    </div>
+                </a>
                 <div class="card-footer">
                     <div class="row justify-content-md-center">
                         <div class="col center">
@@ -101,10 +101,12 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-title">Card title</p>
-                </div>
+                <a href="item_detail.html">
+                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                    </div>
+                </a>
                 <div class="card-footer">
                     <div class="row justify-content-md-center">
                         <div class="col center">
@@ -120,10 +122,12 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-title">Card title</p>
-                </div>
+                <a href="item_detail.html">
+                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                    </div>
+                </a>
                 <div class="card-footer">
                     <div class="row justify-content-md-center">
                         <div class="col center">
@@ -154,6 +158,7 @@
         $('#sidebar').load('partials/sidebar.html');
         $('#topbar').load('partials/topbar.html');
         $('#navibar').load('partials/navigation.html');
+        $('#breadcrumb').load('partials/breadcrumb.html');
 
     });
 </script>
