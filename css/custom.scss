@@ -432,6 +432,78 @@ ol.breadcrumb {
         }
     }
 }
+.modal-backdrop {
+
+}
+li.breadcrumb-back {
+    margin-right:20px;
+    color: #82be00;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    bottom:0px;
+    background: rgba(0,0,0,0.6);
+}
+.carousel-control-prev {
+    justify-content: left;
+}
+.carousel-control-next{
+    justify-content: right;
+}
+.carousel-controls-left, .carousel-controls-right {
+    background: rgba(255,255,255,0.5);
+    padding:15px;
+    width:50px;
+    height:50px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.modal.modal-right .modal-dialog {
+    margin: auto;
+    width: 400px;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.modal-right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.modal-right .modal-body {
+    padding: 15px 15px 15px;
+}
+
+/*Right*/
+.modal.modal-right.fade .modal-dialog {
+    right: -400px;
+    top: 163px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.modal-right.fade.in .modal-dialog {
+    right: 0;
+}
+.modal-backdrop {
+    background: none;
+}
 .item {
     .modal-body {
         label {
