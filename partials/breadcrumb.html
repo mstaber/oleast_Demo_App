@@ -1,9 +1,24 @@
 <!-- #TODO: The breadcrumb shows the position on the webpage. Therefore it is dynamically filled. First element is the SVG if visitor is on projects, portfolio or items. Second element is category and third and higher is the position on website, like subcategory and item, or create item page, etc. -->
 <div class="top_breadcrumb">
     <nav aria-label="breadcrumb">
+        <!-- TODO: The following button only on pages that have a filter, like the portfolio page with all items.-->
+        <button type="button" id="sidebarCollapse" class="btn btn-sm">
+            <i class="material-icons">remove_red_eye</i>
+            <span>Show Filters</span>
+            <!-- #TODO: Change to hide filters when activated. Toggle those two buttons.
+            <i class="material-icons">visibility_off</i>
+            <span>Hide Filters</span>
+            -->
+        </button>
         <ol class="breadcrumb">
             <li class="breadcrumb-back"><a href="#">≪ BACK</a></li>
-            <li class="breadcrumb-item"><a href="#"><img class="vectors" src="images/projects.svg" width="20"></a></li>
+            <li class="breadcrumb-item">
+                <a href="#" class="svg">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/portfolio.svg#Ebene_1"></use>
+                    </svg>
+                </a>
+            </li>
             <li class="breadcrumb-item"><a href="#">Category</a></li>
             <li class="breadcrumb-item active" aria-current="page">Page</li>
         </ol>

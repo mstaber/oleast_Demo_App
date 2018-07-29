@@ -31,7 +31,7 @@
             </a>
         </div>
     </div>
-    <div class="col-lg-6 main_text">
+    <div class="col-lg-5 main_text">
         <div class="row">
             <div class="col-lg-12">
                 <h4>Headline</h4>
@@ -41,46 +41,62 @@
         </div>
         <div class="row">
             <div class="col-lg-3 item_bottom">
-                <figure class="figure">
-                    <img class="item_icon" src="images/product.svg">
+                <!-- TODO: If item has certain values add class active to the figures. See following example-->
+                <figure class="figure item_icon product active">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/product.svg#Ebene_1"></use>
+                    </svg>
                     <figcaption class="figure-caption">Product</figcaption>
                 </figure>
-                <figure class="figure">
-                    <img class="item_icon" src="images/service.svg">
+                <figure class="figure item_icon service">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/service.svg#Ebene_1"></use>
+                    </svg>
                     <figcaption class="figure-caption">Service</figcaption>
                 </figure>
             </div>
             <div class="col-lg-3 item_bottom">
-                <figure class="figure">
-                    <img class="item_icon" src="images/plane.svg">
+                <figure class="figure item_icon active">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/plane.svg#Ebene_1"></use>
+                    </svg>
                     <figcaption class="figure-caption">&nbsp;</figcaption>
                 </figure>
-                <figure class="figure">
-                    <img class="item_icon" src="images/train.svg">
+                <figure class="figure item_icon">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/train.svg#Ebene_1"></use>
+                    </svg>
                     <figcaption class="figure-caption">Industry</figcaption>
                 </figure>
-                <figure class="figure">
-                    <img class="item_icon" src="images/retail.svg">
+                <figure class="figure item_icon">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="images/retail.svg#Ebene_1"></use>
+                    </svg>
                     <figcaption class="figure-caption">&nbsp;</figcaption>
                 </figure>
             </div>
             <div class="col-lg-3 item_bottom">
-                <h6>emerging markets</h6>
-                <small>division</small>
+                <figure class="figure">
+                    <h6>emerging markets</h6>
+                    <figcaption class="figure-caption">division</figcaption>
+                </figure>
             </div>
             <div class="col-lg-3 item_bottom">
-                <h6>emerging markets</h6>
-                <small>brand</small>
+                <figure class="figure">
+                    <img class="item_icon logo" src="images/rim.svg">
+                    <figcaption class="figure-caption">brand</figcaption>
+                </figure>
             </div>
         </div>
     </div>
+    <div class="col-lg-1"></div>
     <div class="col-lg-2 sidebar_left">
         <button type="button" class="btn btn-success btn_lsg wide"  data-toggle="modal" data-target="#ModalProject"><span>Add to Project</span></button>
         <p>This item is part of the following projects:</p>
         <img class="item_icon" src="images/trash.svg"><span>Projektname 1</span>
-        <button type="button" class="btn btn-outline-success btn_lsg wide" data-toggle="modal" data-target="#ModalDetails"><span>Details</span></button>
-        <button type="button" class="btn btn-outline-success btn_lsg wide" data-toggle="modal" data-target="#ModalAttachments"><span>Attachments</span></button>
-        <div class="icons">
+        <button type="button" class="btn btn-success btn_lsg wide" data-toggle="modal" data-target="#ModalDetails"><span>Show Details</span></button>
+        <button type="button" class="btn btn-outline-success btn_lsg wide" data-toggle="modal" data-target="#ModalAttachments"><span>Show ttachments</span></button>
+        <div class="icons itemmenu">
                     <img class="item_icon" src="images/download.svg">
                     <img class="item_icon" src="images/trash.svg">
                     <img class="item_icon" src="images/edit.svg">

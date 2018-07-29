@@ -22,122 +22,60 @@
     <div id="navibar"></div>
 
     <!-- Sidebar Holder -->
-    <div id="sidebar"></div>
+
 
     <!-- Page Content Holder -->
-    <div class="container-fluid" id="content">
-        <div id="breadcrumb"></div>
-
+    <div class="container-fluid">
+        <!-- <div id="breadcrumb"></div>-->
         <div class="top_breadcrumb">
-            <button type="button" id="sidebarCollapse" class="btn btn-sm">
-                <i class="material-icons">remove_red_eye</i>
-                <span>Filter</span>
-            </button>
-            <!-- TODO: Here have to be the selected items from the filter. By clicking on one item here should reduce the option in the left filter bar. -->
+            <nav aria-label="breadcrumb">
+                <button type="button" id="sidebarCollapse" class="btn btn-sm">
+                    <i class="material-icons">remove_red_eye</i>
+                    <span>Show Filters</span>
+                    <!-- #TODO: Change to hide filters when activated. Toggle those two buttons.
+                    <i class="material-icons">visibility_off</i>
+                    <span>Hide Filters</span>
+                    -->
+                </button>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-back"><a href="#">≪ BACK</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="svg">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="images/portfolio.svg#Ebene_1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Page</li>
+                </ol>
+            </nav>
         </div>
+        <div id="sidebar"></div>
+        <div id="content">
         <!-- TODO: Next follows the carddeck for the portfolio items. The images and titles are only placeholders. -->
-        <div class="card-deck">
-            <div class="card">
-                <a href="item_detail.html">
-                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-title">Card title</p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <div class="row justify-content-md-center">
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/download.svg">
+            <div id="filter"></div>
+            <div class="card-deck">
+
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="card">
+                    <a href="item_detail.html">
+                        <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Card title and with a second line</p>
                         </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/trash.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/edit.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a href="item_detail.html">
-                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-title">Card title</p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <div class="row justify-content-md-center">
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/download.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/trash.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/edit.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a href="item_detail.html">
-                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-title">Card title</p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <div class="row justify-content-md-center">
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/download.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/trash.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/edit.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a href="item_detail.html">
-                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-title">Card title</p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <div class="row justify-content-md-center">
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/download.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/trash.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/edit.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a href="item_detail.html">
-                    <img class="card-img-top" src="images/dummy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-title">Card title</p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <div class="row justify-content-md-center">
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/download.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/trash.svg">
-                        </div>
-                        <div class="col center">
-                            <img class="card_footer_icons" src="images/edit.svg">
+                    </a>
+                    <div class="card-footer">
+                        <div class="row justify-content-md-center">
+                            <div class="col center">
+                                <img class="card_footer_icons" src="images/download.svg">
+                            </div>
+                            <div class="col center">
+                                <img class="card_footer_icons" src="images/trash.svg">
+                            </div>
+                            <div class="col center">
+                                <img class="card_footer_icons" src="images/edit.svg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,6 +97,7 @@
         $('#topbar').load('partials/topbar.html');
         $('#navibar').load('partials/navigation.html');
         $('#breadcrumb').load('partials/breadcrumb.html');
+        $('#filter').load('partials/filter.html');
 
     });
 </script>

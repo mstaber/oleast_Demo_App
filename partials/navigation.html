@@ -1,35 +1,48 @@
-        <div class="bg-dark">
+<div class="bg-dark">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark brand_bar">
-                <a class="navbar-brand" href="#">
-                    <!--#TODO Hier wenn möglich das Logo des LSG als Vektordatei einfügen, also svg-->
-                    <img src="images/LSGgroup_Logo_white_web_RGB.png" height="20" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                    </ul>
-                    <span class="navbar-text">
-                        <img src="images/log-out.svg" width="20">
-                    </span>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark brand_bar">
+        <a class="navbar-brand" href="#">
+            <!--#TODO Hier wenn möglich das Logo des LSG als Vektordatei einfügen, also svg-->
+            <img src="images/LSGgroup_Logo_white_web_RGB.png" height="20" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText2,navbarText1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText1">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text">
+                <img src="images/log-out.svg" width="20">
+            </span>
+        </div>
+    </nav>
 
     <nav id="menubar" class="navbar navbar-expand-lg navbar-light bg-light navigation">
+        <div class="collapse navbar-collapse" id="navbarText2">
         <ul class="nav nav-pills navbar-expand-lg navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="baumdiagramm.html"><img class="vectors" src="images/portfolio.svg" width="20">Portfolio</a>
+            <li id="portfolio" class="nav-item active">
+                <a class="nav-link hvr-underline-from-center" href="baumdiagramm.html">
+                <svg viewBox="0 0 32 32">
+                    <use xlink:href="images/portfolio.svg#Ebene_1"></use>
+                </svg>
+                    Portfolio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="projects.html"><img class="vectors" src="images/projects.svg" width="20">Projects</a>
+            <li id="projects" class="nav-item">
+                <a  class="nav-link hvr-underline-from-center" href="projects.html">
+                <svg viewBox="0 0 32 32">
+                    <use xlink:href="images/projects.svg#Ebene_1"></use>
+                </svg>
+                    Projects</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="portfolio.html"><img class="vectors" src="images/items.svg" width="20">Items</a>
+            <li id="items" class="nav-item">
+                <a class="nav-link hvr-underline-from-center" href="portfolio.html">
+                <svg viewBox="0 0 32 32">
+                    <use xlink:href="images/items.svg#Ebene_1"></use>
+                </svg>
+                    Items</a>
             </li>
         </ul>
-        <div class="collapse navbar-collapse" id="navbarText">
+
             <ul class="navbar-nav mr-auto">
             </ul>
             <span class="navbar-text">

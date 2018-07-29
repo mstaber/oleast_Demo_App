@@ -5,8 +5,10 @@
 
 /*custom*/
 .nav-link {
-    display: block;
+    display: flex !important;
     padding: 1rem 5rem;
+    align-items: center !important;
+    justify-content: center !important;
 }
 .navbar {
     .brand_bar {
@@ -56,8 +58,8 @@
 }
 #ModalDetails {
     .modal-body {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         text-align: left;
     }
     .box {
@@ -334,21 +336,73 @@ p.ModalDetails {
         border: none;
     }
 }
+#filter {
+    .filter {
+        text-transform: uppercase;
+        color: #82be00;
+        display: flex;
+        align-items: center;
+    }
+}
 .table th, .table td {border:none;padding:0.5rem;font-weight: normal;}
-button#sidebarCollapse {background-color: #55555a;color:#ffffff;margin-left: -15px;border-radius: 0px 5px 5px 0px;}
+button#sidebarCollapse {
+    background-color: #55555a;
+    color:#ffffff;
+    margin-left: -15px;
+    border-radius: 0px;
+    height:44px;
+    width:200px;
+    float:left;
+    text-transform: uppercase;
+}
 .navbar.navigation {padding:0px; padding-right:15px;}
 img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
 .material-icons {font-size:17px !important;margin-right:5px;}
 .nav-pills {
+    svg {
+        width:35px;
+        fill: #55555a;
+    }
     .nav-link {
         border-radius: 0px;
         color:#55555a;
     }
-    .nav-link.active,
-    .show > .nav-link {
-        color: #fff;
-        background-color: #82be00;
+    #portfolio {
+        &.nav-item.active {
+            svg {
+                fill: #fff;
+            }
+            a {
+                color: #fff;
+            }
+            background-color: #82be00;
+        }
     }
+    #projects {
+        &.nav-item.active {
+            svg {
+                fill: #fff;
+            }
+            a {
+                color: #fff;
+            }
+            background-color: #00afd7;
+        }
+    }
+    #items {
+        &.nav-item.active{
+            svg {
+                fill: #fff;
+            }
+            a {
+                color: #fff;
+            }
+            background-color: #a5007d;
+        }
+    }
+}
+#item {
+    padding-top:15px;
 }
 .middle {vertical-align: super;}
 span.middle {padding:10px;}
@@ -358,7 +412,52 @@ span.middle {padding:10px;}
     padding: 0px;
 }
 .main_text h6 {color:#959595;margin-bottom: 15px;}
-.item_icon {width:20px;margin:8px;}
+
+.item_icon {
+    width:20px;
+    margin:8px;
+    &.service {
+        width:40px;
+        svg {
+            width:20px;
+            fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+        }
+        &.active {
+            svg {
+                fill:none;stroke:#82BE00;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10
+            }
+        }
+    }
+    &.product {
+        width:40px;
+        svg {
+            width:20px;
+            fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;
+        }
+        &.active {
+            svg {
+                fill: none;
+                stroke: #82BE00;
+                stroke-width: 4;
+                stroke-miterlimit: 10;
+            }
+        }
+    }
+    &.active {
+        svg {
+            fill:#82BE00;
+        }
+    }
+}
+.item_icon.logo {
+    height: 20px;
+    width:100%;
+}
+.itemmenu .item_icon {
+  width:40px;
+  padding:8px;
+  border:1px solid #c1c1c1;
+}
 .item_bottom {
     text-align: center;
     border: 1px solid #d9dada;
@@ -372,7 +471,7 @@ span.middle {padding:10px;}
         text-transform: uppercase;
         color: #a3cf44;
         margin-top: 11px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
     }
 }
 
@@ -384,7 +483,7 @@ span.middle {padding:10px;}
 }
 #sidebar ul {padding:0 10px;}
 .top_breadcrumb {
-    margin-bottom:15px;
+    margin-bottom:0px;
     nav {
         border-radius: 0px;
         border-bottom: 1px solid #ececed;
@@ -395,8 +494,32 @@ ol.breadcrumb {
     align-items: center;
     font-size:0.7rem;
     margin:0px;
+    a.svg {
+        display: flex;
+    }
     .vectors {
         width:20px;
+    }
+    svg {
+        width:20px;
+    }
+}
+#sidebarCollapse {
+    svg {
+        width:20px;
+    }
+}
+#delete_filters {
+    width:200px;
+    float: left;
+ }
+.element {
+    border: 1px solid #ececed;
+    border-radius: 5px;
+    padding: 2px 5px;
+    i {
+        margin-left:15px;
+        font-style: normal;
     }
 }
 .breadcrumb-item + .breadcrumb-item::before {content:">";}
@@ -544,6 +667,9 @@ li.breadcrumb-back {
 }
 
 button i, button span {vertical-align: middle;}
+.card-deck .card {
+    margin:15px 0px;
+}
 .card-title {
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
@@ -562,7 +688,7 @@ p.card-title {text-align:center;min-height:50px;}
     }
 }
 img.card_footer_icons {width:15px;}
-.card-footer {background:none; border:none;}
+.card-footer {background:none; border-top:1px solid #ececed;}
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -598,7 +724,7 @@ a, a:hover, a:focus {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #00afd7;
+    background: #55555a;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -682,9 +808,8 @@ nav {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 #sidebar {
-    width: 225px;
-    position: fixed;
-    top: 62px;
+    width: 200px;
+    position: absolute;
     left: 0;
     height: 100vh;
     z-index: 999;
@@ -694,7 +819,7 @@ nav {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -200px;
 }
 
 #sidebar .sidebar-header {
@@ -726,7 +851,72 @@ nav {
      color: #fff;
      background: #55555a;
  }
+#sidebar {
+    .form-check {
+        padding-left: 0px;
+    }
+    /* Customize the label (the container) */
+    .form-check-label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
+    /* Hide the browser's default checkbox */
+    .form-check-label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #919198;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .form-check-label:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .form-check-label input:checked ~ .checkmark {
+        background-color: #82be00;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .form-check-label input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .form-check-label .checkmark:after {
+        left: 3px;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+        border: solid #55555a;
+        border-width: 3px;
+    }
+}
 a.profile[aria-expanded="true"] {
     color: #fff;
     background: none;
@@ -740,9 +930,9 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     content: '\e313';
     display: block;
     position: absolute;
-    right: 20px;
+    right: 0px;
     font-family: 'Material Icons';
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 a[aria-expanded="true"]::before {
     content: '\e316';
@@ -792,13 +982,14 @@ a.article, a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    width: calc(100% - 225px);
+    width: calc(100% - 200px);
     padding: 0px 15px;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
     /*top: 0;*/
     right: 0;
+    margin-top:15px;
 }
 #content.active {
     width: 100%;
@@ -852,3 +1043,4 @@ a.article, a.article:hover {
         display: none;
     }
 }
+
