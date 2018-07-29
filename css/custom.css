@@ -866,7 +866,8 @@ nav {
     background-color: #919198;
     -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
-    border-radius: 0px !important; }
+    border-radius: 0px !important;
+    border: none; }
   #sidebar .form-check-label:hover input ~ .checkmark {
     background-color: #ccc; }
   #sidebar .form-check-label input:checked ~ .checkmark {
@@ -880,8 +881,8 @@ nav {
   #sidebar .form-check-label .checkmark:after {
     left: 3px;
     top: 3px;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     border: solid #55555a;
     border-width: 3px; }
 
