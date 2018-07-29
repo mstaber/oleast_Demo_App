@@ -133,7 +133,7 @@ th.table_header {
   position: absolute;
   right: 15px;
   top: 0px;
-  width: 60px;
+  width: 15px;
   border-bottom: 2px solid; }
 
 .create_form h6 {
@@ -149,7 +149,7 @@ th.table_header {
   background-color: #fff;
   border-color: #c5c6c6; }
 .create_form .form-check {
-  width: 300px;
+  width: 200px;
   padding: 10px;
   border: 1px solid #c5c6c6; }
 .create_form .form-row {
@@ -473,13 +473,14 @@ span.middle {
   width: 100%; }
 
 .itemmenu .item_icon {
-  width: 40px;
+  width: 29px;
   padding: 8px;
   border: 1px solid #c1c1c1; }
 
 .item_bottom {
   text-align: center;
-  border: 1px solid #d9dada; }
+  border: 1px solid #d9dada;
+  padding: 0px; }
   .item_bottom .figure-caption, .item_bottom .item_bottom small {
     text-transform: uppercase;
     font-size: 0.5rem;
@@ -525,7 +526,7 @@ ol.breadcrumb {
   width: 20px; }
 
 #delete_filters {
-  width: 200px;
+  width: 120px;
   float: left; }
 
 .element {
@@ -864,7 +865,10 @@ nav {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #919198; }
+    background-color: #919198;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; }
   #sidebar .form-check-label:hover input ~ .checkmark {
     background-color: #ccc; }
   #sidebar .form-check-label input:checked ~ .checkmark {
@@ -878,8 +882,8 @@ nav {
   #sidebar .form-check-label .checkmark:after {
     left: 3px;
     top: 3px;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border: solid #55555a;
     border-width: 3px; }
 
@@ -1127,6 +1131,9 @@ span.option_name {
   border: solid white;
   border-width: 3px;
   border-radius: 0% !important; }
+
+.col.center {
+  padding: 0px; }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
