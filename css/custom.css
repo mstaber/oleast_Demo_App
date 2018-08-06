@@ -9,9 +9,18 @@ p {
   font-size: 0.7rem; }
 
 /*custom*/
+.no-padding {
+  padding: 0px; }
+
+#mainnav {
+  padding-left: 45px; }
+
+#navbarText2 {
+  text-transform: uppercase; }
+
 .nav-link {
   display: flex !important;
-  padding: 1rem 5rem;
+  padding: 7px 5rem;
   align-items: center !important;
   justify-content: center !important; }
 
@@ -43,7 +52,10 @@ p {
 .btn_lsg {
   border-radius: 25px;
   margin: 5px 0px;
-  float: right; }
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase; }
 
 .form {
   margin-right: 20px;
@@ -54,10 +66,10 @@ p {
   width: 100%; }
 
 .sidebar_left p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-align: center; }
 .sidebar_left span {
-  font-size: 0.8rem; }
+  font-size: 0.6rem; }
 
 #ModalDetails .modal-body {
   padding-left: 2rem;
@@ -466,9 +478,14 @@ span.middle {
   .item_icon.active svg {
     fill: #82BE00; }
 
+#item_text {
+  padding-right: 40px; }
+
 .item_icon.logo {
   height: 20px;
-  width: 100%; }
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 5px; }
 
 .itemmenu .item_icon {
   width: 29px;
@@ -477,7 +494,6 @@ span.middle {
 
 .item_bottom {
   text-align: center;
-  border: 1px solid #d9dada;
   padding: 0px; }
   .item_bottom .figure-caption, .item_bottom .item_bottom small {
     text-transform: uppercase;
@@ -488,7 +504,7 @@ span.middle {
     text-transform: uppercase;
     color: #a3cf44;
     margin-top: 11px;
-    margin-bottom: 12px; }
+    margin-bottom: 8px; }
 
 .btn.green {
   color: #ffffff;

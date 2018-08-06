@@ -31,9 +31,9 @@
             </a>
         </div>
     </div>
-    <div class="col-lg-6 main_text">
+    <div id="item_text" class="col-lg-6 main_text">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 no-padding">
                 <h4>Headline</h4>
                 <h6>Subheadline</h6>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -90,10 +90,11 @@
         </div>
     </div>
     <div class="col-lg-2 sidebar_left">
-        <button type="button" class="btn btn-success btn_lsg wide"  data-toggle="modal" data-target="#ModalProject"><span>Add to Project</span></button>
+        <!-- #TODO: Standard class for button is btn-outline-success. If active toggle class to btn-success-->
+        <button type="button" class="btn btn-outline-success btn_lsg wide"  data-toggle="modal" data-target="#ModalProject"><span>Add to Project</span></button>
         <p>This item is part of the following projects:</p>
         <img class="item_icon" src="images/trash.svg"><span>Projektname 1</span>
-        <button type="button" class="btn btn-success btn_lsg wide" data-toggle="modal" data-target="#ModalDetails"><span>Show Details</span></button>
+        <button type="button" class="btn btn-outline-success btn_lsg wide" data-toggle="modal" data-target="#ModalDetails"><span>Show Details</span></button>
         <button type="button" class="btn btn-outline-success btn_lsg wide" data-toggle="modal" data-target="#ModalAttachments"><span>Show Attachments</span></button>
         <div class="icons itemmenu">
                     <img class="item_icon" src="images/download.svg">
