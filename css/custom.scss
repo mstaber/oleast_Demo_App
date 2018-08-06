@@ -29,6 +29,11 @@ p {
     background-color: #a5007d;
     border-color: #a5007d;
 }
+.btn-secondary.project {
+    color: #fff;
+    background-color: #00afd7;
+    border-color: #00afd7;
+}
 .btn-success {
     color:#fff;
     background-color:#82be00;
@@ -55,7 +60,7 @@ p {
 .form {
     margin-right:20px;
     float:left;
-    width:100px;
+    width:120px;
 }
 .wide {width:100%;}
 .sidebar_left {
@@ -72,6 +77,7 @@ p {
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: left;
+        p {font-weight:bold;}
     }
     .box {
         width:15px;
@@ -87,10 +93,18 @@ p {
 }
 #ModalAttachments {
     span {vertical-align: middle;}
+    .modal-body {
+        text-align: left;
+    }
+    .modal-footer {
+        justify-content: left;
+    }
 }
 p.ModalDetails {
     text-transform: uppercase;
     padding-top:15px;
+    font-weight:normal !important;
+    color:#959595;
     span {border-bottom: 1px solid #6f6f6e;}
 }
 th.table_header {
@@ -287,7 +301,7 @@ th.table_header {
         width: 25px;
         background-color: #eee;
         border-radius: 0% !important;
-        border:1px solid #a5007d;
+        border:1px solid #c5c6c6;
     }
 
     /* On mouse-over, add a grey background color */
@@ -570,7 +584,11 @@ span.middle {padding:10px;}
         margin-bottom: 8px;
     }
 }
-.item_bottom_inner {}
+.item_bottom_inner {
+    border:1px solid #c1c1c1;
+    height:100%;
+    margin: 2px;
+}
 
 .btn.green {
     color: #ffffff;
@@ -780,8 +798,7 @@ button i, button span {vertical-align: middle;}
     margin-top: 0.75rem;
 }
 .card {
-    border:none;
-    box-shadow: 3px 3px 10px #c1c1c1;
+    border:1px solid #c1c1c1;
     margin-bottom: 30px;
 }
 .center {text-align: center;}
@@ -833,6 +850,15 @@ a, a:hover, a:focus {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+}
+#portfolio .hvr-underline-from-center:before {
+    background: #82be00;
+}
+#projects .hvr-underline-from-center:before {
+    background: #00afd7;
+}
+#items .hvr-underline-from-center:before {
+    background: #a5007d;
 }
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
@@ -937,15 +963,17 @@ nav {
     color: #fff;
     padding: 10px;
 }
-
+#sidebar ul.components li.li_component {
+    padding-left:15px;
+}
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    color: #ffffff;
+    background: #82be00;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -1018,7 +1046,7 @@ nav {
         top: 3px;
         width: 14px;
         height: 14px;
-        border: solid #55555a;
+        border: solid #c5c6c6;
         border-width: 3px;
     }
 }
@@ -1082,7 +1110,11 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-
+#baumdiagramm {
+    p.card-title {
+        text-transform: uppercase;
+    }
+}
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -1104,7 +1136,7 @@ a.article, a.article:hover {
     min-height:100vh;
     padding:20px;
     }
-.white:hover {background-color:rgba(0,0,0,0.1);}
+.white:hover {background-color:rgba(0,0,0,0.1);cursor:grab;}
 .headline {
     color: white;
     padding:20px;
@@ -1149,7 +1181,7 @@ a.nav-link {
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
-    border:1px solid #a5007d;
+    border:1px solid #c5c6c6;
 }
 
 /* On mouse-over, add a grey background color */
@@ -1204,7 +1236,7 @@ span.option_name {
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
-    border:1px solid #a5007d;
+    border:1px solid #c5c6c6;
 }
 
 /* On mouse-over, add a grey background color */
@@ -1254,7 +1286,7 @@ span.option_name {
     width: 25px;
     background-color: #eee;
     border-radius: 0% !important;
-    border:1px solid #a5007d;
+    border:1px solid #c5c6c6;
 }
 
 /* On mouse-over, add a grey background color */

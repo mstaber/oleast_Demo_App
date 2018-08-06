@@ -34,6 +34,11 @@ p {
   background-color: #a5007d;
   border-color: #a5007d; }
 
+.btn-secondary.project {
+  color: #fff;
+  background-color: #00afd7;
+  border-color: #00afd7; }
+
 .btn-success {
   color: #fff;
   background-color: #82be00;
@@ -60,7 +65,7 @@ p {
 .form {
   margin-right: 20px;
   float: left;
-  width: 100px; }
+  width: 120px; }
 
 .wide {
   width: 100%; }
@@ -75,6 +80,8 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: left; }
+  #ModalDetails .modal-body p {
+    font-weight: bold; }
 #ModalDetails .box {
   width: 15px;
   height: 15px;
@@ -87,10 +94,16 @@ p {
 
 #ModalAttachments span {
   vertical-align: middle; }
+#ModalAttachments .modal-body {
+  text-align: left; }
+#ModalAttachments .modal-footer {
+  justify-content: left; }
 
 p.ModalDetails {
   text-transform: uppercase;
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-weight: normal !important;
+  color: #959595; }
   p.ModalDetails span {
     border-bottom: 1px solid #6f6f6e; }
 
@@ -263,7 +276,7 @@ th.table_header {
     width: 25px;
     background-color: #eee;
     border-radius: 0% !important;
-    border: 1px solid #a5007d; }
+    border: 1px solid #c5c6c6; }
   #create_9 .industry_check:hover input ~ .checkmark {
     background-color: #a5007d; }
   #create_9 .industry_check input:checked ~ .checkmark {
@@ -506,6 +519,11 @@ span.middle {
     margin-top: 11px;
     margin-bottom: 8px; }
 
+.item_bottom_inner {
+  border: 1px solid #c1c1c1;
+  height: 100%;
+  margin: 2px; }
+
 .btn.green {
   color: #ffffff;
   background: #82be00;
@@ -685,8 +703,7 @@ button i, button span {
   margin-top: 0.75rem; }
 
 .card {
-  border: none;
-  box-shadow: 3px 3px 10px #c1c1c1;
+  border: 1px solid #c1c1c1;
   margin-bottom: 30px; }
 
 .center {
@@ -742,6 +759,15 @@ a, a:hover, a:focus {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
+
+#portfolio .hvr-underline-from-center:before {
+  background: #82be00; }
+
+#projects .hvr-underline-from-center:before {
+  background: #00afd7; }
+
+#items .hvr-underline-from-center:before {
+  background: #a5007d; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
@@ -835,14 +861,17 @@ nav {
   color: #fff;
   padding: 10px; }
 
+#sidebar ul.components li.li_component {
+  padding-left: 15px; }
+
 #sidebar ul li a {
   padding: 10px;
   font-size: 1.1em;
   display: block; }
 
 #sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff; }
+  color: #ffffff;
+  background: #82be00; }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
@@ -899,7 +928,7 @@ nav {
     top: 3px;
     width: 14px;
     height: 14px;
-    border: solid #55555a;
+    border: solid #c5c6c6;
     border-width: 3px; }
 
 a.profile[aria-expanded="true"] {
@@ -958,6 +987,9 @@ a.article, a.article:hover {
   background: #6d7fcc !important;
   color: #fff !important; }
 
+#baumdiagramm p.card-title {
+  text-transform: uppercase; }
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -980,7 +1012,8 @@ a.article, a.article:hover {
   padding: 20px; }
 
 .white:hover {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: grab; }
 
 .headline {
   color: white;
@@ -1024,7 +1057,7 @@ a.nav-link {
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
-  border: 1px solid #a5007d; }
+  border: 1px solid #c5c6c6; }
 
 /* On mouse-over, add a grey background color */
 .radio_container:hover input ~ .checkmark {
@@ -1073,7 +1106,7 @@ span.option_name {
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
-  border: 1px solid #a5007d; }
+  border: 1px solid #c5c6c6; }
 
 /* On mouse-over, add a grey background color */
 .radio_check:hover input ~ .checkmark {
@@ -1117,7 +1150,7 @@ span.option_name {
   width: 25px;
   background-color: #eee;
   border-radius: 0% !important;
-  border: 1px solid #a5007d; }
+  border: 1px solid #c5c6c6; }
 
 /* On mouse-over, add a grey background color */
 .select_check:hover input ~ .checkmark {
