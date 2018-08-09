@@ -9,6 +9,7 @@ p {
     font-size:0.7rem;
 }
 /*custom*/
+.btn {font-size:0.8rem;}
 .no-padding {padding:0px;}
 #mainnav {padding-left:45px;}
 #navbarText2 {text-transform: uppercase;}
@@ -63,7 +64,9 @@ p {
     width:120px;
 }
 .wide {width:100%;}
+.space_top {margin-top:15px;}
 .sidebar_left {
+    margin-top:22px;
     p {
         font-size:0.6rem;
         text-align:center;
@@ -86,6 +89,16 @@ p {
         float: left;
         margin-right:10px;
     }
+    .modal-footer {
+        border-top:1px solid #ececed;
+        .item_icon {
+            margin:0 auto;
+        }
+        &:hover {
+            background-color:#ececed;
+            cursor:pointer;
+        }
+    }
 }
 
 .icons {
@@ -97,7 +110,15 @@ p {
         text-align: left;
     }
     .modal-footer {
+        border-top:1px solid #ececed;
         justify-content: left;
+        .item_icon {
+            margin:0 auto;
+        }
+        &:hover {
+            background-color:#ececed;
+            cursor:pointer;
+        }
     }
 }
 p.ModalDetails {
@@ -198,6 +219,11 @@ th.table_header {
 .clearfix {
     clear: both;
 }
+#create_1, #create_2, #create_3, #create_4,#create_5,#create_6,#create_7,#create_8,#create_9,#create_10,#create_11,#create_12 {
+    h6 {
+        font-weight: bold;
+    }
+}
 #create_1 {
     input[type=radio]
     {
@@ -211,12 +237,17 @@ th.table_header {
         top:-7px;
         right:40px;
     }
+    h6 {
+        font-weight:bold;
+    }
     .form-check-label {
         width: 100%;
         h6 {
             text-transform: uppercase;
             text-align: center;
             padding-bottom: 15px;
+            font-weight: normal;
+            font-size:0.9rem;
         }
     }
     .form-check-inline {
@@ -248,6 +279,9 @@ th.table_header {
     }
 }
 #create_7 {
+    h6 {
+        font-weight:bold;
+    }
     input[type=radio]
     {
         /* Double-sized Checkboxes */
@@ -285,6 +319,9 @@ th.table_header {
     }
 }
 #create_9 {
+    h6 {
+        font-weight:bold;
+    }
     /* Hide the browser's default checkbox */
     .industry_check input {
         position: absolute;
@@ -344,6 +381,7 @@ th.table_header {
             text-transform: uppercase;
             text-align: center;
             padding-bottom: 15px;
+            font-weight:normal;
         }
     }
     .form-check-inline {
@@ -377,12 +415,16 @@ th.table_header {
         top:-7px;
         right:40px;
     }
+    h6 {
+        font-weight:bold;
+    }
     .form-check-label {
         width: 100%;
         h6 {
             text-transform: uppercase;
             text-align: center;
             padding-bottom: 15px;
+            font-weight: normal;
         }
     }
     .form-check-inline {
@@ -414,6 +456,9 @@ th.table_header {
     }
 }
 #create_14 {
+    h6 {
+        font-weight:bold;
+    }
     /* layout.css Style */
     .upload-drop-zone {
         height: 250px;
@@ -449,6 +494,10 @@ th.table_header {
         align-items: center;
     }
 }
+#sort_by {
+    position: absolute;
+    right:10px;
+}
 .table th, .table td {border:none;padding:0.5rem;font-weight: normal;}
 button#sidebarCollapse {
     background-color: #55555a;
@@ -459,6 +508,8 @@ button#sidebarCollapse {
     width:200px;
     float:left;
     text-transform: uppercase;
+    text-align:left;
+    padding-left:20px;
 }
 .navbar.navigation {padding:0px; padding-right:15px;}
 img.vectors {width:30px; vertical-align: middle;margin-right:5px;}
@@ -584,12 +635,19 @@ span.middle {padding:10px;}
         margin-bottom: 8px;
     }
 }
+button.project span{font-size:0.8rem;}
 .item_bottom_inner {
     border:1px solid #c1c1c1;
     height:100%;
-    margin: 2px;
+    margin: 0px 15px;
+    padding-top:5px;
+    &.first {margin-left: 0px;}
+    &.last {margin-right:0px;}
 }
-
+hr.item {
+    border-bottom: 1px solid #ececed;
+    width:100%;
+}
 .btn.green {
     color: #ffffff;
     background:#82be00;
@@ -748,6 +806,9 @@ li.breadcrumb-back {
         label {
             color: #82be00;
         }
+
+            text-align:left;
+
         .form-control {
             border: 1px solid #ececed;
         }
@@ -965,6 +1026,7 @@ nav {
 }
 #sidebar ul.components li.li_component {
     padding-left:15px;
+    font-weight:bold;
 }
 #sidebar ul li a {
     padding: 10px;
@@ -1020,7 +1082,8 @@ nav {
 
     /* On mouse-over, add a grey background color */
     .form-check-label:hover input ~ .checkmark {
-        background-color: #ccc;
+        background-color: #55555a;
+        border:3px solid #82be00;
     }
 
     /* When the checkbox is checked, add a blue background */
@@ -1220,6 +1283,7 @@ a.nav-link {
 }
 span.option_name {
     margin-left: 25px;
+    font-size:0.8rem;
 }
 /* Hide the browser's default radio button */
 .radio_check input {
@@ -1327,6 +1391,31 @@ span.option_name {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (max-width: 1100px) {
+    .item_bottom {
+        .item_icon {
+            margin: 3px;
+            &.logo {
+                margin-left:0px;
+            }
+        }
+    }
+    .item_bottom_inner {
+        padding-top:10px;
+    }
+    .item_bottom h6 {
+        font-size: 0.5rem;
+    }
+    .item_bottom .figure-caption, .item_bottom .item_bottom small {
+        font-size: 0.4rem;
+    }
+    .item_icon.product svg, .item_icon.service svg {
+        width:15px;
+    }
+    .modal.modal-right.fade .modal-dialog {
+        right:-300px;
+    }
+}
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -1344,4 +1433,5 @@ span.option_name {
         display: none;
     }
 }
+
 

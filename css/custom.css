@@ -9,6 +9,9 @@ p {
   font-size: 0.7rem; }
 
 /*custom*/
+.btn {
+  font-size: 0.8rem; }
+
 .no-padding {
   padding: 0px; }
 
@@ -70,11 +73,16 @@ p {
 .wide {
   width: 100%; }
 
-.sidebar_left p {
-  font-size: 0.6rem;
-  text-align: center; }
-.sidebar_left span {
-  font-size: 0.6rem; }
+.space_top {
+  margin-top: 15px; }
+
+.sidebar_left {
+  margin-top: 22px; }
+  .sidebar_left p {
+    font-size: 0.6rem;
+    text-align: center; }
+  .sidebar_left span {
+    font-size: 0.6rem; }
 
 #ModalDetails .modal-body {
   padding-left: 2rem;
@@ -88,6 +96,13 @@ p {
   background-color: #82be00;
   float: left;
   margin-right: 10px; }
+#ModalDetails .modal-footer {
+  border-top: 1px solid #ececed; }
+  #ModalDetails .modal-footer .item_icon {
+    margin: 0 auto; }
+  #ModalDetails .modal-footer:hover {
+    background-color: #ececed;
+    cursor: pointer; }
 
 .icons {
   text-align: center; }
@@ -97,7 +112,13 @@ p {
 #ModalAttachments .modal-body {
   text-align: left; }
 #ModalAttachments .modal-footer {
+  border-top: 1px solid #ececed;
   justify-content: left; }
+  #ModalAttachments .modal-footer .item_icon {
+    margin: 0 auto; }
+  #ModalAttachments .modal-footer:hover {
+    background-color: #ececed;
+    cursor: pointer; }
 
 p.ModalDetails {
   text-transform: uppercase;
@@ -183,6 +204,9 @@ th.table_header {
 .clearfix {
   clear: both; }
 
+#create_1 h6, #create_2 h6, #create_3 h6, #create_4 h6, #create_5 h6, #create_6 h6, #create_7 h6, #create_8 h6, #create_9 h6, #create_10 h6, #create_11 h6, #create_12 h6 {
+  font-weight: bold; }
+
 #create_1 input[type=radio] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2);
@@ -197,12 +221,16 @@ th.table_header {
   position: absolute;
   top: -7px;
   right: 40px; }
+#create_1 h6 {
+  font-weight: bold; }
 #create_1 .form-check-label {
   width: 100%; }
   #create_1 .form-check-label h6 {
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-weight: normal;
+    font-size: 0.9rem; }
 #create_1 .form-check-inline {
   padding: 20px 0px 0px 0px;
   width: 200px; }
@@ -224,6 +252,8 @@ th.table_header {
   #create_1 .active svg.checked {
     fill: #ffffff; }
 
+#create_7 h6 {
+  font-weight: bold; }
 #create_7 input[type=radio] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2);
@@ -264,6 +294,8 @@ th.table_header {
   /* Create the checkmark/indicator (hidden when not checked) */
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */ }
+  #create_9 h6 {
+    font-weight: bold; }
   #create_9 .industry_check input {
     position: absolute;
     opacity: 0;
@@ -302,7 +334,8 @@ th.table_header {
     #create_9 .form-check-label h6 {
       text-transform: uppercase;
       text-align: center;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      font-weight: normal; }
   #create_9 .form-check-inline {
     padding: 20px 0px 0px 0px;
     width: 200px; }
@@ -330,12 +363,15 @@ th.table_header {
   position: absolute;
   top: -7px;
   right: 40px; }
+#create_10 h6 {
+  font-weight: bold; }
 #create_10 .form-check-label {
   width: 100%; }
   #create_10 .form-check-label h6 {
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-weight: normal; }
 #create_10 .form-check-inline {
   padding: 20px 0px 0px 0px;
   width: 200px; }
@@ -359,6 +395,8 @@ th.table_header {
 #create_14 {
   /* layout.css Style */
   /* skin.css Style*/ }
+  #create_14 h6 {
+    font-weight: bold; }
   #create_14 .upload-drop-zone {
     height: 250px;
     border-width: 2px;
@@ -384,6 +422,10 @@ th.table_header {
   display: flex;
   align-items: center; }
 
+#sort_by {
+  position: absolute;
+  right: 10px; }
+
 .table th, .table td {
   border: none;
   padding: 0.5rem;
@@ -397,7 +439,9 @@ button#sidebarCollapse {
   height: 44px;
   width: 200px;
   float: left;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px; }
 
 .navbar.navigation {
   padding: 0px;
@@ -519,10 +563,22 @@ span.middle {
     margin-top: 11px;
     margin-bottom: 8px; }
 
+button.project span {
+  font-size: 0.8rem; }
+
 .item_bottom_inner {
   border: 1px solid #c1c1c1;
   height: 100%;
-  margin: 2px; }
+  margin: 0px 15px;
+  padding-top: 5px; }
+  .item_bottom_inner.first {
+    margin-left: 0px; }
+  .item_bottom_inner.last {
+    margin-right: 0px; }
+
+hr.item {
+  border-bottom: 1px solid #ececed;
+  width: 100%; }
 
 .btn.green {
   color: #ffffff;
@@ -660,12 +716,14 @@ li.breadcrumb-back {
 .modal-backdrop {
   background: none; }
 
-.item .modal-body label {
-  color: #82be00; }
-.item .modal-body .form-control {
-  border: 1px solid #ececed; }
-.item .modal-body .form-group select {
-  height: 300px; }
+.item .modal-body {
+  text-align: left; }
+  .item .modal-body label {
+    color: #82be00; }
+  .item .modal-body .form-control {
+    border: 1px solid #ececed; }
+  .item .modal-body .form-group select {
+    height: 300px; }
 .item .modal-footer .btn-outline-primary.modal_button, .item .modal-sub-footer .btn-outline-primary.modal_button {
   color: #82be00; }
 .item .modal-footer .btn-outline-primary:hover, .item .modal-sub-footer .btn-outline-primary:hover {
@@ -862,7 +920,8 @@ nav {
   padding: 10px; }
 
 #sidebar ul.components li.li_component {
-  padding-left: 15px; }
+  padding-left: 15px;
+  font-weight: bold; }
 
 #sidebar ul li a {
   padding: 10px;
@@ -914,7 +973,8 @@ nav {
     border-radius: 0px !important;
     border: none; }
   #sidebar .form-check-label:hover input ~ .checkmark {
-    background-color: #ccc; }
+    background-color: #55555a;
+    border: 3px solid #82be00; }
   #sidebar .form-check-label input:checked ~ .checkmark {
     background-color: #82be00; }
   #sidebar .checkmark:after {
@@ -1090,7 +1150,8 @@ a.nav-link {
   transform: rotate(45deg); }
 
 span.option_name {
-  margin-left: 25px; }
+  margin-left: 25px;
+  font-size: 0.8rem; }
 
 /* Hide the browser's default radio button */
 .radio_check input {
@@ -1186,6 +1247,26 @@ span.option_name {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (max-width: 1100px) {
+  .item_bottom .item_icon {
+    margin: 3px; }
+    .item_bottom .item_icon.logo {
+      margin-left: 0px; }
+
+  .item_bottom_inner {
+    padding-top: 10px; }
+
+  .item_bottom h6 {
+    font-size: 0.5rem; }
+
+  .item_bottom .figure-caption, .item_bottom .item_bottom small {
+    font-size: 0.4rem; }
+
+  .item_icon.product svg, .item_icon.service svg {
+    width: 15px; }
+
+  .modal.modal-right.fade .modal-dialog {
+    right: -300px; } }
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -250px; }

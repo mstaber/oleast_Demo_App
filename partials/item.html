@@ -1,5 +1,27 @@
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-12">
+        <div class="top_breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-back"><a href="#">≪ BACK</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="svg">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="images/portfolio.svg#Ebene_1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Page</li>
+                </ol>
+            </nav>
+        </div>
+        </div>
+        </div>
+        <div class="row space_top">
+            <div class="col-lg-4">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,7 +53,7 @@
             </a>
         </div>
     </div>
-    <div id="item_text" class="col-lg-6 main_text">
+            <div id="item_text" class="col-lg-7 main_text">
         <div class="row">
             <div class="col-lg-12 no-padding">
                 <h4>Headline</h4>
@@ -39,9 +61,12 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
+                <div class="row">
+                    <hr class="item">
+                </div>
         <div class="row">
             <div class="col-lg-3 item_bottom">
-                <div class="item_bottom_inner">
+                <div class="item_bottom_inner first">
                     <!-- TODO: If item has certain values add class active to the figures. See following example-->
                     <figure class="figure item_icon product active">
                         <svg viewBox="0 0 32 32">
@@ -88,7 +113,7 @@
                 </div>
             </div>
             <div class="col-lg-3 item_bottom">
-                <div class="item_bottom_inner">
+                <div class="item_bottom_inner last">
                     <figure class="figure">
                         <img class="item_icon logo" src="images/rim.svg">
                         <figcaption class="figure-caption">brand</figcaption>
@@ -97,9 +122,12 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
+
     <div class="col-lg-2 sidebar_left">
         <!-- #TODO: Standard class for button is btn-outline-success. If active toggle class to btn-success-->
-        <button type="button" class="btn btn-outline-success btn_lsg wide"  data-toggle="modal" data-target="#ModalProject"><span>Add to Project</span></button>
+        <button type="button" class="project btn btn-success btn_lsg wide"  data-toggle="modal" data-target="#ModalProject"><span>Add to Project</span></button>
         <p>This item is part of the following projects:</p>
         <img class="item_icon" src="images/trash.svg"><span>Projektname 1</span>
         <!-- #TODO: Change span from show details/attachments to hide details&attachments -->
@@ -134,6 +162,9 @@
                 <p class="ModalDetails"><span>Me</span>al Type</p>
                 <div class="box"></div><p>Main Dish</p>
             </div>
+            <div class="modal-footer">
+                <img class="item_icon" src="images/close_arrow.svg" data-dismiss="modal">
+            </div>
         </div>
     </div>
 </div>
@@ -145,7 +176,7 @@
                 <img class="item_icon" src="images/attachment.svg"><span>filename.png</span>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary modal_button" data-dismiss="modal">Close</button>
+                <img class="item_icon" src="images/close_arrow.svg" data-dismiss="modal">
             </div>
         </div>
     </div>
