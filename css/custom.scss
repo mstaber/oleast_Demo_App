@@ -575,8 +575,8 @@ span.middle {padding:10px;}
     &.service {
         width:40px;
         svg {
-            width:20px;
-            fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+            width:30px;
+            fill:none;stroke:#6f6f6e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
         }
         &.active {
             svg {
@@ -584,11 +584,22 @@ span.middle {padding:10px;}
             }
         }
     }
+    &.industry {
+        svg {
+            width:30px;
+            fill:#6f6f6e;
+        }
+        &.active {
+            svg {
+                fill: #82BE00;
+            }
+        }
+    }
     &.product {
         width:40px;
         svg {
-            width:20px;
-            fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;
+            width:30px;
+            fill:none;stroke:#6f6f6e;stroke-width:4;stroke-miterlimit:10;
         }
         &.active {
             svg {
@@ -615,7 +626,7 @@ span.middle {padding:10px;}
     margin-bottom:5px;
 }
 .itemmenu .item_icon {
-  width:29px;
+  width:40px;
   padding:8px;
   border:1px solid #c1c1c1;
 }
@@ -643,6 +654,7 @@ button.project span{font-size:0.8rem;}
     padding-top:5px;
     &.first {margin-left: 0px;}
     &.last {margin-right:0px;}
+    .figure {margin:8px;}
 }
 hr.item {
     border-bottom: 1px solid #ececed;
@@ -695,6 +707,9 @@ ol.breadcrumb {
         margin-left:15px;
         font-style: normal;
     }
+}
+span.element:hover {
+    background: #ececed;
 }
 .breadcrumb-item + .breadcrumb-item::before {content:">";}
 .modal-title {width:100%;}
@@ -799,7 +814,7 @@ li.breadcrumb-back {
     right: 0;
 }
 .modal-backdrop {
-    background: none;
+    background: #fff;
 }
 .item {
     .modal-body {
@@ -861,20 +876,45 @@ button i, button span {vertical-align: middle;}
 .card {
     border:1px solid #c1c1c1;
     margin-bottom: 30px;
+    box-shadow: 0px 2px #d6d6d6;
+}
+.card-body:hover,.col.center:hover {
+    background:#ececed;
+    cursor: url(../images/cursor.svg), auto;
 }
 .center {text-align: center;}
 p.card-title {
     text-align:center;
-    min-height:50px;
+    min-height:35px;
+    font-size:1rem;
+    font-weight:bold;
 }
 .card-body {
+    overflow:hidden;
     text-align: center;
     small {
         color: #9c9d9d;
     }
+    img {
+        max-width: 100%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    &:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
-img.card_footer_icons {width:15px;}
-.card-footer {background:none; border-top:1px solid #ececed;}
+
+img.card_footer_icons {width:25px;}
+.card-footer {
+    background:none;
+    border-top:1px solid #ececed;
+    padding:0px;
+    .row{  margin:0px; }
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -1027,6 +1067,7 @@ nav {
 #sidebar ul.components li.li_component {
     padding-left:15px;
     font-weight:bold;
+    label {font-weight:normal;}
 }
 #sidebar ul li a {
     padding: 10px;
@@ -1035,7 +1076,7 @@ nav {
 }
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #82be00;
+    background: none;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -1069,8 +1110,8 @@ nav {
     /* Create a custom checkbox */
     .checkmark {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0px;
+        left: 0px;
         height: 20px;
         width: 20px;
         background-color: #919198;
@@ -1101,6 +1142,12 @@ nav {
     /* Show the checkmark when checked */
     .form-check-label input:checked ~ .checkmark:after {
         display: block;
+        left: 3px;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+        border: solid #c5c6c6;
+        border-width: 3px;
     }
 
     /* Style the checkmark/indicator */
@@ -1176,6 +1223,7 @@ a.article, a.article:hover {
 #baumdiagramm {
     p.card-title {
         text-transform: uppercase;
+        font-weight:normal;
     }
 }
 /* ---------------------------------------------------
@@ -1199,7 +1247,10 @@ a.article, a.article:hover {
     min-height:100vh;
     padding:20px;
     }
-.white:hover {background-color:rgba(0,0,0,0.1);cursor:grab;}
+.white:hover {background-color:rgba(0,0,0,0.1);cursor: url(../images/cursor.svg), auto;}
+#sidebar {
+    label:hover, input:hover {cursor: url(../images/cursor.svg), auto;}
+}
 .headline {
     color: white;
     padding:20px;
@@ -1209,7 +1260,7 @@ a.article, a.article:hover {
     position: relative;
 }
 h6 {
-    font-size:0.8rem;
+    font-size:1rem;
 }
 a.nav-link {
     font-size:1rem;
@@ -1386,12 +1437,24 @@ span.option_name {
     border-radius:0% !important;
 }
 .col.center {
-    padding:0px;
+    padding:10px;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 1100px) {
+    img.card_footer_icons {
+        width:15px;
+    }
+    p.card-title {
+        font-size:0.7rem;
+        font-weight:bold;
+    }
+    #baumdiagramm {
+        p.card-title {
+            font-weight: normal;
+        }
+    }
     .item_bottom {
         .item_icon {
             margin: 3px;
@@ -1400,6 +1463,11 @@ span.option_name {
             }
         }
     }
+    .itemmenu .item_icon {
+        width:29px;
+    }
+    .item_icon.industry svg {width:20px;}
+    .item_bottom_inner .figure {margin: 0 0 0.5rem;}
     .item_bottom_inner {
         padding-top:10px;
     }
@@ -1410,10 +1478,25 @@ span.option_name {
         font-size: 0.4rem;
     }
     .item_icon.product svg, .item_icon.service svg {
-        width:15px;
+        width:20px;
     }
     .modal.modal-right.fade .modal-dialog {
         right:-300px;
+    }
+    .item_bottom h6 {margin-top:7px;}
+    h6 {
+        font-size:0.8rem;
+    }
+    #baum {
+        .col-sm-6:nth-of-type(odd) {
+            padding-right:2px;
+        }
+
+        .col-sm-6:nth-of-type(even) {
+            padding-left:2px;
+        }
+        .white {padding:20px 10px;}
+
     }
 }
 @media (max-width: 768px) {
