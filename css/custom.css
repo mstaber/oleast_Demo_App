@@ -603,7 +603,10 @@ span.middle {
   height: 20px;
   width: 100%;
   margin-left: 0px;
-  margin-bottom: 5px; }
+  margin-bottom: 8px; }
+
+.icons.itemmenu .item_icon {
+  margin: 7px; }
 
 .itemmenu .item_icon {
   width: 40px;
@@ -622,7 +625,7 @@ span.middle {
     text-transform: uppercase;
     color: #a3cf44;
     margin-top: 11px;
-    margin-bottom: 8px; }
+    margin-bottom: 11px; }
 
 button.project span {
   font-size: 0.8rem; }
@@ -675,6 +678,8 @@ ol.breadcrumb {
 
 #sidebarCollapse svg {
   width: 20px; }
+#sidebarCollapse i {
+  margin-bottom: 3px; }
 
 #delete_filters {
   width: 120px;
@@ -1022,7 +1027,8 @@ nav {
   padding-left: 15px;
   font-weight: bold; }
   #sidebar ul.components li.li_component label {
-    font-weight: normal; }
+    font-weight: normal;
+    padding-top: 3px; }
 
 #sidebar ul li a {
   padding: 10px;

@@ -688,7 +688,10 @@ span.middle {padding:10px;}
     height: 20px;
     width:100%;
     margin-left:0px;
-    margin-bottom:5px;
+    margin-bottom:8px;
+}
+.icons.itemmenu .item_icon {
+    margin:7px;
 }
 .itemmenu .item_icon {
   width:40px;
@@ -708,7 +711,7 @@ span.middle {padding:10px;}
         text-transform: uppercase;
         color: #a3cf44;
         margin-top: 11px;
-        margin-bottom: 8px;
+        margin-bottom:11px;
     }
 }
 button.project span{font-size:0.8rem;}
@@ -758,6 +761,9 @@ ol.breadcrumb {
 #sidebarCollapse {
     svg {
         width:20px;
+    }
+    i {
+        margin-bottom:3px;
     }
 }
 #delete_filters {
@@ -1148,7 +1154,7 @@ nav {
 #sidebar ul.components li.li_component {
     padding-left:15px;
     font-weight:bold;
-    label {font-weight:normal;}
+    label {font-weight:normal; padding-top:3px;}
 }
 #sidebar ul li a {
     padding: 10px;
