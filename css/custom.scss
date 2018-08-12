@@ -775,6 +775,8 @@ ol.breadcrumb {
 }
 span.element:hover {
     background: #ececed;
+    cursor: url(../images/cursor.svg), auto;
+
 }
 .breadcrumb-item + .breadcrumb-item::before {content:">";}
 .modal-title {width:100%;}

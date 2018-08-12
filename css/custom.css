@@ -689,7 +689,8 @@ ol.breadcrumb {
     font-style: normal; }
 
 span.element:hover {
-  background: #ececed; }
+  background: #ececed;
+  cursor: url(../images/cursor.svg), auto; }
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">"; }
