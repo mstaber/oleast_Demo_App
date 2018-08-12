@@ -2,6 +2,42 @@
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-Bd.otf);
+    font-weight:bold;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-BdIt.otf);
+    font-weight:bold;
+    font-style:italic;
+}
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-It.otf);
+    font-weight:normal;
+    font-style:italic;
+}
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-Lt.otf);
+    font-weight:light;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-LtIt.otf);
+    font-weight:light;
+    font-style:italic;
+}
+@font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url(fonts/HelveticaNeueLTStd-Roman.otf);
+    font-weight:normal;
+    font-style:normal;
+}
 body {
     font-size:0.7rem;
 }
@@ -9,6 +45,7 @@ p {
     font-size:0.7rem;
 }
 /*custom*/
+* {font-family: Helvetica Neue LT Std}
 .btn {font-size:0.8rem;}
 .no-padding {padding:0px;}
 #mainnav {padding-left:45px;}
@@ -207,14 +244,22 @@ th.table_header {
         background-color: #fff;
         border-color: #c5c6c6;
     }
+    .last {
+        color:#c5c6c6;
+        background-color: #fff;
+        border-color: #c5c6c6;
+        float:right;
+    }
     .form-check {
-        width:200px;
         padding:10px;
         border:1px solid #c5c6c6
     }
     .form-row {
         margin-bottom: 15px;
+        display: flex;
+        align-items: center;
     }
+
 }
 .clearfix {
     clear: both;
@@ -240,6 +285,10 @@ th.table_header {
     h6 {
         font-weight:bold;
     }
+    h6.center {
+        color:#c5c6c6;
+
+    }
     .form-check-label {
         width: 100%;
         h6 {
@@ -248,15 +297,15 @@ th.table_header {
             padding-bottom: 15px;
             font-weight: normal;
             font-size:0.9rem;
+            color:#c5c6c6;
         }
     }
     .form-check-inline {
         padding:20px 0px 0px 0px;
-        width:200px;
     }
     .box {
         background:#c5c6c6;
-        padding:40px;
+        padding:20px;
     }
     svg {
         fill: none;
@@ -276,6 +325,14 @@ th.table_header {
         svg.checked {
             fill: #ffffff;
         }
+        h6 {
+            color: #a5007d;
+        }
+    }
+}
+#create_5,#create_6,#create_8,#create_11 {
+    .form-check-inline {
+        width: 200px;
     }
 }
 #create_7 {
@@ -298,13 +355,12 @@ th.table_header {
         width: 100%;
     }
     .form-check-inline {
-        padding:20px 0px 0px 0px;
-        width:200px;
+        padding:0px 0px 0px 0px;
         margin-bottom: 20px;
     }
     .box {
         padding:10px;
-        min-height: 110px;
+        min-height: 100px;
         align-items: center;
         display: flex;
     }
@@ -901,7 +957,21 @@ p.card-title {
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
     }
-    &:hover img {
+    img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.card {
+    overflow:hidden;
+    img.card-img-top {
+        max-width: 100%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    img.card-img-top:hover {
         -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
@@ -1333,7 +1403,7 @@ a.nav-link {
     transform: rotate(45deg);
 }
 span.option_name {
-    margin-left: 25px;
+    margin-left: 30px;
     font-size:0.8rem;
 }
 /* Hide the browser's default radio button */
@@ -1345,7 +1415,7 @@ span.option_name {
 /* Create a custom radio button */
 .radio_check .checkmark {
     position: absolute;
-    top: 5px !important;
+    top: 6px !important;
     left: 20px !important;
     height: 25px;
     width: 25px;
@@ -1380,8 +1450,8 @@ span.option_name {
 .radio_check .checkmark:after {
     left: 3px;
     top: 3px;
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     border: solid white;
     border-width: 3px;
     border-radius:50%;
@@ -1442,7 +1512,7 @@ span.option_name {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     img.card_footer_icons {
         width:15px;
     }
@@ -1497,6 +1567,14 @@ span.option_name {
         }
         .white {padding:20px 10px;}
 
+    }
+    #create_7 {
+            .box {
+                padding:10px;
+                min-height: 70px;
+                align-items: center;
+                display: flex;
+            }
     }
 }
 @media (max-width: 768px) {

@@ -2,6 +2,42 @@
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-Bd.otf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-BdIt.otf);
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-It.otf);
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-Lt.otf);
+  font-weight: light;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-LtIt.otf);
+  font-weight: light;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url(fonts/HelveticaNeueLTStd-Roman.otf);
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-size: 0.7rem; }
 
@@ -9,6 +45,9 @@ p {
   font-size: 0.7rem; }
 
 /*custom*/
+* {
+  font-family: Helvetica Neue LT Std; }
+
 .btn {
   font-size: 0.8rem; }
 
@@ -194,12 +233,18 @@ th.table_header {
   color: #c5c6c6;
   background-color: #fff;
   border-color: #c5c6c6; }
+.create_form .last {
+  color: #c5c6c6;
+  background-color: #fff;
+  border-color: #c5c6c6;
+  float: right; }
 .create_form .form-check {
-  width: 200px;
   padding: 10px;
   border: 1px solid #c5c6c6; }
 .create_form .form-row {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; }
 
 .clearfix {
   clear: both; }
@@ -223,6 +268,8 @@ th.table_header {
   right: 40px; }
 #create_1 h6 {
   font-weight: bold; }
+#create_1 h6.center {
+  color: #c5c6c6; }
 #create_1 .form-check-label {
   width: 100%; }
   #create_1 .form-check-label h6 {
@@ -230,13 +277,13 @@ th.table_header {
     text-align: center;
     padding-bottom: 15px;
     font-weight: normal;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    color: #c5c6c6; }
 #create_1 .form-check-inline {
-  padding: 20px 0px 0px 0px;
-  width: 200px; }
+  padding: 20px 0px 0px 0px; }
 #create_1 .box {
   background: #c5c6c6;
-  padding: 40px; }
+  padding: 20px; }
 #create_1 svg {
   fill: none;
   stroke: #fff;
@@ -251,6 +298,11 @@ th.table_header {
     fill: #b73397; }
   #create_1 .active svg.checked {
     fill: #ffffff; }
+  #create_1 .active h6 {
+    color: #a5007d; }
+
+#create_5 .form-check-inline, #create_6 .form-check-inline, #create_8 .form-check-inline, #create_11 .form-check-inline {
+  width: 200px; }
 
 #create_7 h6 {
   font-weight: bold; }
@@ -271,12 +323,11 @@ th.table_header {
 #create_7 .form-check-label {
   width: 100%; }
 #create_7 .form-check-inline {
-  padding: 20px 0px 0px 0px;
-  width: 200px;
+  padding: 0px 0px 0px 0px;
   margin-bottom: 20px; }
 #create_7 .box {
   padding: 10px;
-  min-height: 110px;
+  min-height: 100px;
   align-items: center;
   display: flex; }
 #create_7 svg {
@@ -798,7 +849,19 @@ p.card-title {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
-  .card-body:hover img {
+  .card-body img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.card {
+  overflow: hidden; }
+  .card img.card-img-top {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .card img.card-img-top:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -1192,7 +1255,7 @@ a.nav-link {
   transform: rotate(45deg); }
 
 span.option_name {
-  margin-left: 25px;
+  margin-left: 30px;
   font-size: 0.8rem; }
 
 /* Hide the browser's default radio button */
@@ -1203,7 +1266,7 @@ span.option_name {
 /* Create a custom radio button */
 .radio_check .checkmark {
   position: absolute;
-  top: 5px !important;
+  top: 6px !important;
   left: 20px !important;
   height: 25px;
   width: 25px;
@@ -1233,8 +1296,8 @@ span.option_name {
 .radio_check .checkmark:after {
   left: 3px;
   top: 3px;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border: solid white;
   border-width: 3px;
   border-radius: 50%; }
@@ -1289,7 +1352,7 @@ span.option_name {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   img.card_footer_icons {
     width: 15px; }
 
@@ -1340,7 +1403,13 @@ span.option_name {
   #baum .col-sm-6:nth-of-type(even) {
     padding-left: 2px; }
   #baum .white {
-    padding: 20px 10px; } }
+    padding: 20px 10px; }
+
+  #create_7 .box {
+    padding: 10px;
+    min-height: 70px;
+    align-items: center;
+    display: flex; } }
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -250px; }
