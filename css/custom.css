@@ -181,26 +181,23 @@ th.table_header {
     border-bottom: 1px solid #c5c6c6;
     padding-bottom: 5px; }
   th.table_header div#basics {
-    width: 180px;
+    width: 110px;
     position: absolute;
-    top: 110px;
-    right: 0px;
-    left: -60px; }
-  th.table_header div#who {
-    width: 100px;
-    position: absolute;
-    top: 60px;
+    top: 73px;
     right: 0px;
     left: -20px; }
-  th.table_header div#details {
-    width: 140px;
+  th.table_header div#who {
+    width: 80px;
     position: absolute;
-    top: 93px;
+    top: 40px;
     right: 0px;
-    left: -40px; }
-
-.last_th {
-  padding-bottom: 50px !important; }
+    left: -5px; }
+  th.table_header div#details {
+    width: 100px;
+    position: absolute;
+    top: 61px;
+    right: 0px;
+    left: -15px; }
 
 .table_header.active p, th.active {
   color: #a5007d; }
@@ -212,14 +209,19 @@ th.table_header {
 .table.menu {
   border-right: 1px solid #c5c6c6; }
 
+#upload_table span, #upload_table p {
+  color: #c5c6c6; }
 #upload_table .active span {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #a5007d; }
+#upload_table .active p {
+  color: #a5007d; }
 #upload_table .active hr {
-  position: absolute;
-  right: 15px;
-  top: 0px;
-  width: 15px;
-  border-bottom: 2px solid; }
+  margin-top: 10px;
+  margin-bottom: 0px; }
+#upload_table .tag {
+  background: #fafafa;
+  float: left; }
 
 .create_form h6 {
   color: #a5007d;
@@ -475,7 +477,10 @@ th.table_header {
 
 #sort_by {
   position: absolute;
-  right: 10px; }
+  right: 10px;
+  display: flex; }
+  #sort_by input {
+    margin-bottom: 3px; }
 
 .table th, .table td {
   border: none;
@@ -1310,7 +1315,7 @@ span.option_name {
 /* Create a custom radio button */
 .select_check .checkmark {
   position: absolute;
-  top: 5px !important;
+  top: 6px !important;
   left: 20px !important;
   height: 25px;
   width: 25px;
@@ -1348,6 +1353,12 @@ span.option_name {
 
 .col.center {
   padding: 10px; }
+
+.upload_menu {
+  padding: 2px !important; }
+
+.last_th {
+  padding-bottom: 50px !important; }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -1409,7 +1420,17 @@ span.option_name {
     padding: 10px;
     min-height: 70px;
     align-items: center;
-    display: flex; } }
+    display: flex; }
+  #create_7 .form-check-inline {
+    width: 100%; }
+
+  #create_9 .form-check-inline {
+    width: 100%; }
+
+  #create_10 .form-check-inline {
+    width: 100%; }
+  #create_10 .box {
+    padding: 20px; } }
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -250px; }

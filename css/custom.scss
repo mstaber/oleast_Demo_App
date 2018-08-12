@@ -180,30 +180,28 @@ th.table_header {
         padding-bottom: 5px;
     }
     div#basics {
-        width: 180px;
+        width: 110px;
         position: absolute;
-        top: 110px;
-        right: 0px;
-        left: -60px;
-    }
-    div#who {
-        width: 100px;
-        position: absolute;
-        top: 60px;
+        top: 73px;
         right: 0px;
         left: -20px;
     }
-    div#details {
-        width: 140px;
+    div#who {
+        width: 80px;
         position: absolute;
-        top: 93px;
+        top: 40px;
         right: 0px;
-        left: -40px;
+        left: -5px;
+    }
+    div#details {
+        width: 100px;
+        position: absolute;
+        top: 61px;
+        right: 0px;
+        left: -15px;
     }
 }
-.last_th {
-    padding-bottom: 50px !important;
-}
+
 .table_header.active p, th.active{
         color:#a5007d;
     }
@@ -215,18 +213,25 @@ th.table_header {
     border-right: 1px solid #c5c6c6;
 }
 #upload_table {
+    span,p {color: #c5c6c6;}
     .active {
         span {
             font-weight: bold;
+            color: #a5007d;
         }
+        p {color:#a5007d;}
         hr {
-            position: absolute;
-            right:15px;
-            top:0px;
-            width:15px;
-            border-bottom:2px solid;
+            margin-top:10px;
+            margin-bottom: 0px;
         }
     }
+  .tag_line {
+
+  }
+  .tag {
+    background: #fafafa;
+    float: left;
+  }
 }
 .create_form {
     h6 {
@@ -553,6 +558,10 @@ th.table_header {
 #sort_by {
     position: absolute;
     right:10px;
+    display: flex;
+    input {
+        margin-bottom:3px;
+    }
 }
 .table th, .table td {border:none;padding:0.5rem;font-weight: normal;}
 button#sidebarCollapse {
@@ -1465,7 +1474,7 @@ span.option_name {
 /* Create a custom radio button */
 .select_check .checkmark {
     position: absolute;
-    top: 5px !important;
+    top: 6px !important;
     left: 20px !important;
     height: 25px;
     width: 25px;
@@ -1508,6 +1517,12 @@ span.option_name {
 }
 .col.center {
     padding:10px;
+}
+.upload_menu {
+    padding:2px !important;
+}
+.last_th {
+    padding-bottom: 50px !important;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -1569,12 +1584,28 @@ span.option_name {
 
     }
     #create_7 {
-            .box {
-                padding:10px;
-                min-height: 70px;
-                align-items: center;
-                display: flex;
-            }
+        .box {
+            padding:10px;
+            min-height: 70px;
+            align-items: center;
+            display: flex;
+        }
+        .form-check-inline {
+            width:100%;
+        }
+    }
+    #create_9 {
+        .form-check-inline {
+            width:100%;
+        }
+    }
+    #create_10 {
+        .form-check-inline {
+            width:100%;
+        }
+        .box {
+            padding:20px;
+        }
     }
 }
 @media (max-width: 768px) {

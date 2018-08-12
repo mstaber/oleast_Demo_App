@@ -3,42 +3,42 @@
 <!-- #TODO: Left column/table is navigation for form. Each section create 1 to 14 has a link in navigation. Please create multipage form with angular and different sections -->
 <!-- #TODO: When a item is selected in the form the element should get the active class -->
 <div class="row">
-    <div class="col-lg-2">
+    <div class="col-sm-2">
         <table id="upload_table" class="table menu">
             <tbody>
             <tr>
                 <th rowspan="6" class="table_header active"><div id="basics"><p>Basics | What</p></div></th>
-                <th class="active"><span>What?</span> <img class="check_icon" src="images/check.svg"> <hr></th>
+                <th class="upload_menu active"><div class="tag"><span>What?</span><img class="check_icon" src="images/check.svg"></div><div class="tag_line"><hr></div></th>
             </tr>
-            <tr><th><span>Name it!</span></th></tr>
-            <tr><th><span>Describe it!</span></th></tr>
-            <tr><th><span>Your number, pls.</span></th></tr>
-            <tr><th><span>Sort it!</span></th></tr>
-            <tr><th class="last_th"><span>One more time!</span></th></tr>
+            <tr><th class="upload_menu"><span>Name it!</span></th></tr>
+            <tr><th class="upload_menu"><span>Describe it!</span></th></tr>
+            <tr><th class="upload_menu"><span>Your number, pls.</span></th></tr>
+            <tr><th class="upload_menu"><span>Sort it!</span></th></tr>
+            <tr><th class="last_th upload_menu"><span>One more time!</span></th></tr>
             <tr>
                 <th rowspan="3" class="table_header"><div id="who"><p>Who | Where</p></div></th>
-                <th><span>Whom's is it?</span></th>
+                <th class="upload_menu"><span>Whom's is it?</span></th>
             </tr>
-            <tr><th><span>Where?</span></th></tr>
-            <tr><th class="last_th"><span>Which Industry?</span></th></tr>
+            <tr><th class="upload_menu"><span>Where?</span></th></tr>
+            <tr><th class="last_th upload_menu"><span>Which Industry?</span></th></tr>
             <tr>
                 <th rowspan="5" class="table_header"><div id="details"><p>Details</p></div></th>
-                <th><span>Good or great?</span></th>
+                <th class="upload_menu"><span>Good or great?</span></th>
             </tr>
-            <tr><th><span>Style?</span></th></tr>
-            <tr><th><span>BOM!</span></th></tr>
-            <tr><th><span>What 2?</span></th></tr>
-            <tr><th class="last_th"><span>Attachments</span></th></tr>
+            <tr><th class="upload_menu"><span>Style?</span></th></tr>
+            <tr><th class="upload_menu"><span>BOM!</span></th></tr>
+            <tr><th class="upload_menu"><span>What 2?</span></th></tr>
+            <tr><th class="last_th upload_menu"><span>Attachments</span></th></tr>
             </tbody>
         </table>
     </div>
-    <div class="col-lg-8 create_form">
+    <div class="col-sm-8 create_form">
         <div id="create_1" class="clearfix">
             <h6>Type:</h6>
             <p>What are you showing us - product or service?</p>
             <form>
                 <div class="form-row">
-                    <div class="col-3 col-lg-3">
+                    <div class="col-4 col-md-3">
                         <!-- #TODO: Active class has to change by selection with js -->
                         <div class="form-check form-check-inline active">
                             <label class="form-check-label radio_container" for="inlineRadiotype1">
@@ -53,10 +53,10 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-sm-1">
                         <h6 class="center">OR</h6>
                     </div>
-                    <div class="col-3 col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineRadiotype2">
                                 <h6>Service</h6>
@@ -151,7 +151,7 @@
             <p>Which brand offers this product/service?</p>
             <form> <!-- #TODO: Icons have to be included as svg. Toogle images if active from colored to greyscale-->
                 <div class="form-row">
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline active">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand1">
                                 <div class="box">
@@ -163,7 +163,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand2">
                                 <div class="box">
@@ -175,7 +175,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand3">
                                 <div class="box">
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand4">
                                 <div class="box">
@@ -201,7 +201,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand5">
                                 <div class="box">
@@ -213,7 +213,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineCheckboxBrand6">
                                 <div class="box">
@@ -254,7 +254,7 @@
             <p>Please select one or more industries we could offer this product/service to.</p>
             <form>
                 <div class="form-row">
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <!-- #TODO: Active class has to change by selection with js -->
                         <div class="form-check form-check-inline active">
                             <label class="form-check-label industry_check" for="inlineCheckboxIndustry1">
@@ -269,7 +269,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label industry_check" for="inlineCheckboxIndustry2">
                                 <h6>Train</h6>
@@ -283,7 +283,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label industry_check" for="inlineCheckboxIndustry3">
                                 <h6>Convenience retail</h6>
@@ -307,7 +307,7 @@
             <p>How would you assess the quality level of your product/service (compared to others in the same category)?</p>
             <form>
                 <div class="form-row">
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <!-- #TODO: Active class has to change by selection with js -->
                         <div class="form-check form-check-inline active">
                             <label class="form-check-label radio_container" for="inlineRadioQuality1">
@@ -328,7 +328,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineRadioQuality2">
                                 <h6>Quality</h6>
@@ -348,7 +348,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-4 col-md-3">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label radio_container" for="inlineRadioQuality3">
                                 <h6>Premium</h6>
